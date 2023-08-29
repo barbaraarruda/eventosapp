@@ -25,7 +25,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
         </thead>
         <tbody>
             <tr th:each="evento : ${eventos}">
-            <td><span th:text="${evento.nome}"></span></p>
+            <td><a th:href="${(#mvc.url('EC#detalhesEvento').arg(0, evento.codigo)).build()}"><span th:text="${evento.nome}"></span></a></p>
             <td><span th:text="${evento.local}"></span></p>
             <td><span th:text="${evento.data}"></span></p>
             <td><span th:text="${evento.horario}"></span></p>
