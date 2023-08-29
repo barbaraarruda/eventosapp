@@ -19,7 +19,14 @@ public class Evento implements Serializable{
     private String local;
     private String data;
     private String horario;
+    private String descricao;
 
+    public String getDescricao() {
+        return descricao;
+    }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
     public long getCodigo() {
         return codigo;
     }

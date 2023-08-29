@@ -20,6 +20,6 @@ public class EventoController {
     public String form(Evento evento){
 
         er.save(evento);
-        return "redirect: ./evento/cadastrarEvento";
+        return "redirect:/cadastrarEvento";
     }
 }
