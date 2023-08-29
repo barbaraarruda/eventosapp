@@ -33,11 +33,12 @@ public class EventoController {
         return mv;
     }
 
-    @RequestMapping("/")
-    public ModelAndView detalhesEvento(@PathVariable("codigo") long codigo) {
+    @RequestMapping("/(codigo)")
+    public ModelAndView detalhesEvento(@PathVariable("codigo") long codigo){
         Evento evento = er.findByCodigo(codigo);
         ModelAndView mv = new ModelAndView("detalhesEvento");
         mv.addObject("evento", evento);
+        System.out.println("evento" + evento);
         return mv;
     }
 }
