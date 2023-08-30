@@ -22,6 +22,14 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
             <p>Horário: <span th:text="${evento.horario}"></span></p>
             <p>Descrição: <span th:text="${evento.descricao}"></span></p>
         </div>
+        <form method="post">
+            <h4>Cadastro de Convidados</h4>
+           Nome: <input type="text" value="" name="nomeConvidado" />
+            CPF: <input type="text" value="" name="cpf" />
+            E-mail: <input type="email" value="" name="emailConvidado" />
+            Telefone: <input type="text" value="" name="telefoneConvidado" />
+            <button type="submit" class="waves-effect deep-purple accent-1 btn"><i class="material-icons left">add</i>Adicionar Convidado</button>
+        </form>
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
